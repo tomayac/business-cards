@@ -1,0 +1,22 @@
+{
+  "name": "Hello, my name is…",
+  "short_name": "Hello",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/9550a029-cbe2-4e54-bba1-0bd6b35b3c89%2Fdda943b2-2206-45c7-8765-b8c0d2464edd-large.png?v=1629884729569",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "image/*": [".jpg", ".jpeg", ".webp", ".png", ".avif", ".gif", ".svg"]
+      }
+    }
+  ]
+}
