@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark light;
+  --gap: 1rem;
+  --border: 2px;
+  --accent-color: deeppink;
+}
+
+html {
+  box-sizing: border-box;  
+  width: 100vw;
+  height: 100vh;
+  display: flex;   
+  justify-content: center;
+  outline-offset: calc(-1 * var(--gap));
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: var(--gap);
+  font-family: system-ui, sans-serif;  
+  width: calc(100% - 2 * var(--gap));
+  height: calc(100% - 2 * var(--gap));  
+  max-width: 80ch;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+button {
+  outline-offset: calc(-1 * var(--gap));
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img:not([src^="data:"]) {
+  cursor: pointer;
+}
+
+main {
+  border: solid 1px var(--accent-color);
+  border-radius: var(--gap);
+  padding: var(--gap);
+  margin-block-end: var(--gap);
+}
+
+footer {
+  margin-block-start: var(--gap);
+  font-size: .75rem;  
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 3rem;
+  height: auto;
+  vertical-align: middle;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/9550a029-cbe2-4e54-bba1-0bd6b35b3c89%2Fdda943b2-2206-45c7-8765-b8c0d2464edd-large.png?v=1629884729569"
+    />
+    <title>Hello, my name is…</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <script>
+      if (!isSecureContext) {
+        location.protocol = 'https:';
+      }
+    </script>
+    <script src="/script.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <h1>
+        👋 Hello, my name is…
+      </h1>
+      <p>
+        <img
+          src="https://cdn.glitch.com/9550a029-cbe2-4e54-bba1-0bd6b35b3c89%2Fdda943b2-2206-45c7-8765-b8c0d2464edd-large.png?v=1629884729569"
+          width="512"
+          height="512"
+          class="avatar"
+        />
+        <button hidden type="button" class="copy-avatar">Copy</button>
+        <span class="name" contenteditable>Thomas Steiner</span> (<a
+          contenteditable
+          href="https://twitter.com/tomayac"
+          class="twitter-link"
+          >@tomayac</a
+        >
+        <button hidden type="button" class="copy-twitter">Copy</button>)
+      </p>
+      <p class="role" contenteditable>Developer Relations Engineer at Google.</p>
+    </main>
+    <button hidden type="button" class="save-card">Save Card</button>
+    <button type="button" class="reset-card">Reset Card</button>
+    <footer>
+      Click the image to change the avatar, or just paste or drop an image onto
+      the page.
+    </footer>
+  </body>
+</html>
