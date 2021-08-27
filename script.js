@@ -27,6 +27,10 @@ if ('clipboard' in navigator && 'writeText' in navigator.clipboard) {
   import('./copy-text.js');
 }
 
+if ('showOpenFilePicker' in window) {
+  import('./open.js');
+}
+
 if ('clipboard' in navigator && 'write' in navigator.clipboard && 'showSaveFilePicker' in window) {
   import('./copy-image.js');
 }
@@ -35,18 +39,14 @@ if ('showSaveFilePicker' in window) {
   import('./save.js');
 }
 
-if ('showOpenFilePicker' in window) {
-  import('./open.js');
-}
-
 if ('getAsFileSystemHandle' in DataTransferItem.prototype) {
   import('./drag.js');
 }
 
-if ('launchQueue' in window) {
-  import('./file.js');
-}
-
 if ('clipboardData' in ClipboardEvent.prototype && 'showSaveFilePicker' in window) {
   import('./paste.js');
+}
+
+if ('launchQueue' in window) {
+  import('./file.js');
 }
