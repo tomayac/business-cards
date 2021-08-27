@@ -1,6 +1,7 @@
 const button = document.querySelector('.copy-avatar');
 const img = document.querySelector('.avatar');
 
+img.hidden = false;
 button.hidden = false;
 button.addEventListener('click', async () => {
   try {

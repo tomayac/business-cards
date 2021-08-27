@@ -2,6 +2,10 @@ const body = document.body;
 const documentElement = document.documentElement;
 const img = document.querySelector('.avatar');
 const icon = document.querySelector('link[rel=icon]');
+const footer = document.querySelector('footer');
+
+footer.hidden = false;
+img.hidden = false;
 
 const before = documentElement.style.outline;
 
