@@ -2,7 +2,7 @@ import {
   get,
   set,
   del,
-} from 'https://unpkg.com/idb-keyval@5.0.0/dist/esm/index.js';
+} from 'https://cdn.jsdelivr.net/npm/idb-keyval@5/+esm';
 
 const button = document.querySelector('.save-card');
 const reset = document.querySelector('.reset-card');
@@ -73,7 +73,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-reset.addEventListener('click', async () => {  
+reset.addEventListener('click', async () => {
   window.businessCard.handle = undefined;
   await del('file');
 });
