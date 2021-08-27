@@ -1,6 +1,7 @@
 const img = document.querySelector('.avatar');
 const icon = document.querySelector('link[rel=icon]');
 
+img.hidden = false;
 img.addEventListener('click', async () => {
   try {
     const [handle] = await window.showOpenFilePicker({
