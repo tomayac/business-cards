@@ -1,6 +1,7 @@
 const link = document.querySelector('.twitter-link');
 const reset = document.querySelector('.reset-card');
 const img = document.querySelector('.avatar');
+const icon = document.querySelector('link[rel=icon]');
 const name = document.querySelector('.name');
 const role = document.querySelector('.role');
 
@@ -9,8 +10,8 @@ link.addEventListener('input', () => {
 });
 
 reset.addEventListener('click', async () => {
-  img.src =
-    './avatar.png';
+  img.src = './avatar.png';
+  icon.href = './avatar.png';
   name.textContent = 'Thomas Steiner';
   role.textContent = 'Developer Relations Engineer at Google.';
   link.textContent = '@tomayac';
