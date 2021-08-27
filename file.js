@@ -1,6 +1,8 @@
 const img = document.querySelector('.avatar');
 const icon = document.querySelector('link[rel=icon]');
 
+img.hidden = false;
+
 window.launchQueue.setConsumer(async (launchParams) => {
   if (!launchParams.files.length) {
     return;

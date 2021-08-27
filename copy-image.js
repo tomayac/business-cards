@@ -1,8 +1,7 @@
 const button = document.querySelector('.copy-avatar');
 const img = document.querySelector('.avatar');
 
-img.hidden = false;
-button.hidden = false;
+button.hidden = !('showOpenFilePicker' in window);
 button.addEventListener('click', async () => {
   try {
     const blob = await fetch(img.src).then((response) => response.blob());
