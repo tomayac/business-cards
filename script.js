@@ -47,6 +47,6 @@ if ('launchQueue' in window) {
   import('./file.js');
 }
 
-if ('clipboardData' in ClipboardEvent.prototype) {
+if ('clipboardData' in ClipboardEvent.prototype && 'showSaveFilePicker' in window) {
   import('./paste.js');
 }
