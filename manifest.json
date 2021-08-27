@@ -6,7 +6,7 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "https://cdn.glitch.com/9550a029-cbe2-4e54-bba1-0bd6b35b3c89%2Fdda943b2-2206-45c7-8765-b8c0d2464edd-large.png?v=1629884729569",
+      "src": "./avatar.png",
       "sizes": "512x512",
       "type": "image/png"
     }
