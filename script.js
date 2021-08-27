@@ -27,7 +27,7 @@ if ('clipboard' in navigator && 'writeText' in navigator.clipboard) {
   import('./copy-text.js');
 }
 
-if ('clipboard' in navigator && 'write' in navigator.clipboard) {
+if ('clipboard' in navigator && 'write' in navigator.clipboard && 'showSaveFilePicker' in window) {
   import('./copy-image.js');
 }
 
